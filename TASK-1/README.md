@@ -1,6 +1,6 @@
 # Task 1 — Local Network Port Scan Report
 
-**Student:** Ram Charan  
+**Student:** CHILUMURI. SREE RAM SAI CHARAN  
 **Date:** 20 October 2025  
 **Tools:** Nmap 7.98 (Windows), Npcap
 
