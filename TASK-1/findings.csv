@@ -1,0 +1,2 @@
+IP,OpenPorts,Services,Risk,Notes
+192.168.56.1,"135,137 (filtered),139,445,5040,8000,8089,8191,9997,49664-49678","msrpc,netbios,SMB,Splunkd","Medium/High","VirtualBox host-only adapter - Splunk present; restrict SMB and Splunk ports or bind to localhost."
