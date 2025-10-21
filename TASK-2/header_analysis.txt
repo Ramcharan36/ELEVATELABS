@@ -1,0 +1,11 @@
+Header Analysis (via MXToolbox)
+
+SPF: FAIL
+DKIM: NONE
+DMARC: FAIL
+Source IP: 5.6.7.8 (Russia)
+Return-Path domain: examp1e.com (typo of example.com)
+Mail server HELO: mail.fakehost.ru
+Hop count: 2
+Delay: 5 seconds
+Summary: Header indicates spoofed sender and failed authentication.

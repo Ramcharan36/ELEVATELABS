@@ -1,0 +1,3 @@
+Displayed link: https://bank.com/verify
+Actual link: http://bank-secure-verification.com/login
+MISMATCH → real domain redirects to malicious host.

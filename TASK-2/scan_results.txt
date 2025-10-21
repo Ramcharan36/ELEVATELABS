@@ -1,0 +1,17 @@
+Subject: Urgent – Verify Your Account Now
+From: support@examp1e.com
+To: ramcharan@example.com
+Date: 20-Oct-2025 10:05 AM
+
+Dear user,
+
+We noticed unusual sign-in activity on your account.  
+Please verify your details immediately to avoid suspension.
+
+Click the link below to verify:
+https://bank-secure-verification.com/login
+
+If you do not verify within 24 hours, your account will be closed.
+
+Thank you,
+Support Team
