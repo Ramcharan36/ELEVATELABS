@@ -10,8 +10,8 @@
 - **Source:** Public phishing sample (mock)  
 - **Subject:** Urgent – Verify Your Account Now  
 - **Sender Display Name:** Support Team  
-- **Sender Email:** support@examp1e.com  
-- **Recipient:** ramcharan@example.com  
+- **Sender Email:** support@.com  
+- **Recipient:** ramcharan@.com  
 
 ---
 
