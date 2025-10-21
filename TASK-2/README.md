@@ -10,8 +10,8 @@
 - **Source:** Public phishing sample (mock)  
 - **Subject:** Urgent – Verify Your Account Now  
 - **Sender Display Name:** Support Team  
-- **Sender Email:** support@.com  
-- **Recipient:** ramcharan@.com  
+- **Sender Email:** support@examl1.com  
+- **Recipient:** ramcharan@gmail.com  
 
 ---
 
@@ -22,7 +22,7 @@
 | DKIM | NONE |
 | DMARC | FAIL |
 | Source IP | 5.6.7.8 (Russia) |
-| Return-Path Domain | examp1e.com (typo of example.com) |
+| Return-Path Domain | examp1e.com (typo of gmail.com) |
 
 ---
 
