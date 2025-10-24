@@ -1,0 +1,14 @@
+Return-Path: <support@examp1e.com>
+Received: from unknown (HELO mail.fakehost.ru) (5.6.7.8)
+  by mx.google.com with ESMTP id A1B2C3D4E5
+  for <ramcharan@example.com>; Mon, 20 Oct 2025 10:05:15 +0530
+Received-SPF: fail (google.com: domain of support@examp1e.com does not designate 5.6.7.8 as permitted sender)
+Authentication-Results: spf=fail; dkim=none; dmarc=fail
+DKIM-Signature: none
+From: "Support Team" <support@examp1e.com>
+To: ramcharan@example.com
+Subject: Urgent – Verify Your Account Now
+Message-ID: <abc123@mail.fakehost.ru>
+Date: Mon, 20 Oct 2025 10:05:10 +0530
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8

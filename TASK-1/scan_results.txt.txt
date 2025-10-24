@@ -1,0 +1,114 @@
+Microsoft Windows [Version 10.0.26200.6899]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>ipconfig
+
+Windows IP Configuration
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::f3a8:db55:e80:9700%19
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Local Area Connection* 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : hgu_lan
+   Link-local IPv6 Address . . . . . : fe80::1ae9:9595:3cad:e802%3
+   IPv4 Address. . . . . . . . . . . : 192.168.1.35
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Windows\System32>nmap -sn 192.168.56.1/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 11:26 +0530
+Nmap scan report for 192.168.56.1
+Host is up.
+Nmap done: 256 IP addresses (1 host up) scanned in 11.87 seconds
+
+C:\Windows\System32>nmap -sS 192.168.56.1/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 11:27 +0530
+Nmap scan report for 192.168.56.1
+Host is up (0.00024s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8000/tcp open  http-alt
+8089/tcp open  unknown
+
+Nmap done: 256 IP addresses (1 host up) scanned in 11.74 seconds
+
+C:\Windows\System32>nmap -sS -T4 --open 192.168.56.1/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 11:28 +0530
+Nmap scan report for 192.168.56.1
+Host is up (0.00021s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8000/tcp open  http-alt
+8089/tcp open  unknown
+
+Nmap done: 256 IP addresses (1 host up) scanned in 11.67 seconds
+
+C:\Windows\System32>namp -sS -sV -O -T4 --open 192.168.56.1/24
+'namp' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\System32>nmap -sS -sV -O -T4 --open 192.168.56.1/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 11:29 +0530
+Nmap scan report for 192.168.56.1
+Host is up (0.000064s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+8000/tcp open  http          Splunkd httpd
+8089/tcp open  ssl/http      Splunkd httpd
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+... (remaining fingerprint omitted for brevity)
+Nmap done: 256 IP addresses (1 host up) scanned in 46.71 seconds
+
+C:\Windows\System32>nmap -sS -p- -T4 192.168.56.1/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-10-20 11:31 +0530
+Nmap scan report for 192.168.56.1
+Host is up (0.00063s latency).
+Not shown: 65520 closed tcp ports (reset)
+PORT      STATE    SERVICE
+135/tcp   open     msrpc
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn
+445/tcp   open     microsoft-ds
+5040/tcp  open     unknown
+8000/tcp  open     http-alt
+8089/tcp  open     unknown
+8191/tcp  open     limnerpressure
+9997/tcp  open     palace-6
+49664/tcp open     unknown
+49665/tcp open     unknown
+49668/tcp open     unknown
+49669/tcp open     unknown
+49674/tcp open     unknown
+49678/tcp open     unknown
+
+Nmap done: 256 IP addresses (1 host up) scanned in 17.37 seconds

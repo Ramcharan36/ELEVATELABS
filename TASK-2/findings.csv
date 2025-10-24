@@ -1,0 +1,6 @@
+Indicator,Evidence,Risk,Recommendation
+Spoofed sender domain,"support@examp1e.com (typo in domain)",High,Block and report sender
+SPF/DKIM/DMARC fail,"spf=fail; dkim=none; dmarc=fail",High,Mark as phishing and delete
+Mismatched URL,"display bank.com vs real bank-secure-verification.com",High,Do not click links
+Urgent tone,"'Verify within 24 hours or account closed'",Medium,Raise awareness among users
+Suspicious origin,"IP 5.6.7.8 (Russia)",High,Block IP and update spam filters
